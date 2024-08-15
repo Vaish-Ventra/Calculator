@@ -218,47 +218,47 @@ while True:
             print('invalid operator')
     elif x == 2:
         bs = int(input('base= '))
-        a = int(input('argument(that is a)= '))
+        a = float(input('argument(that is a)= '))
         print('\n')
         Log(bs, a)
     elif x==3:
-        c= int(input("number= "))
+        c= float(input("number= "))
         n= int (input('enter n in nth root= '))
         print ('\n')
         Nth_root(c, n)
     elif x==4:
-        n= int(input("Enter angle in radians: "))
+        n= float(input("Enter angle in radians: "))
         print ('sin(', n, ")=", Sin(n))
     elif x==5:
-        n= int(input("Enter angle in radians: "))
+        n= float(input("Enter angle in radians: "))
         print ('cos(', n, ")=", Cos(n))
     elif x==6:
-        n= int(input("Enter angle in radians: "))
+        n= float(input("Enter angle in radians: "))
         print ('tan(', n, ")=", Tan(n))
     elif x==7:
         n= int(input("Enter angle in radians: "))
         print ('cosec(', n, ")=", Cosec(n))
     elif x==8:
-        n= int(input("Enter angle in radians: "))
+        n= float(input("Enter angle in radians: "))
         print ('sec(', n, ")=", Sec(n))
     elif x==9:
-        n= int(input("Enter angle in radians: "))
+        n= float(input("Enter angle in radians: "))
         print ('cot(', n, ")=", Cot(n))
     elif x==10:
-        a= int(input("Enter a: "))
-        b= int(input("Enter b: "))
-        c= int(input("Enter c: "))
+        a= float(input("Enter a: "))
+        b= float(input("Enter b: "))
+        c= float(input("Enter c: "))
         Solve_Quad(a, b, c)
     elif x==11:
         print ('''Let the equations be
                a1x + b1y + c1 = 0
                a1x + b1y + c1 = 0''')
-        a1= int(input("Enter a1: "))
-        b1= int(input("Enter b1: "))
-        c1= int(input("Enter c1: "))
-        a2= int(input("Enter a2: "))
-        b2= int(input("Enter b2: "))
-        c2= int(input("Enter c2: "))
+        a1= float(input("Enter a1: "))
+        b1= float(input("Enter b1: "))
+        c1= float(input("Enter c1: "))
+        a2= float(input("Enter a2: "))
+        b2= float(input("Enter b2: "))
+        c2= float(input("Enter c2: "))
         print( Solve2lineareq(a1, b1, c1, a2, b2, c2))
     else:
         print ('exited')
