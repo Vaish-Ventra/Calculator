@@ -217,7 +217,7 @@ while True:
         else:
             print('invalid operator')
     elif x == 2:
-        bs = int(input('base= '))
+        bs = float(input('base= '))
         a = float(input('argument(that is a)= '))
         print('\n')
         Log(bs, a)
