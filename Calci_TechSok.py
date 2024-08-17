@@ -113,21 +113,22 @@ def Nth_root(c, n):
             return (a+b)/2
             break
 
-
-def Pow2(x, n):
-    #gn= int(n)
-    # if n-gn==0:
-    #    return Power(x,n)
-    # else:
-    # m = Power(x, (gn))
-    # f=  n-gn
-    # st= str(f)
-    # n= len(st)
-    # num= f* Power(10, n-2)
-    # den=Power(10, n-2)
-
-    # first alter nth root function so as to get the value returned not just printed
-    return x**n
+#Pow2 is to find x^n where n is a decimal. It gives a reasonable aproximation of x**n.
+def Pow2(x, n):    
+    gn= int(n)
+    if n-gn==0:
+        return Power(x,n)
+    else:
+        m = Power(x, (gn)) # m is x power integral part of n
+        f=  n-gn
+        st= str(f)
+        l= len(st)
+        num= f* Power(10, l-2)
+        den=Power(10, l-2)
+        d= Nth_root(x, int(den))
+        d2= Power(d, int(num)) #d2 is x power fractional part n
+        return m*d2
+    
 
 # log a base b
 
